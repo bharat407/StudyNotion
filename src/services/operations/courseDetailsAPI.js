@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { toast } from "react-hot-toast"
 
 import { updateCompletedLectures } from "../../slices/viewCourseSlice"

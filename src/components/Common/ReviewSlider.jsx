@@ -22,7 +22,7 @@ function ReviewSlider() {
   const truncateWords = 15
 
   useEffect(() => {
-    (async () => {
+    ;(async () => {
       const { data } = await apiConnector(
         "GET",
         ratingsEndpoints.REVIEWS_DETAILS_API
@@ -48,12 +48,12 @@ function ReviewSlider() {
             disableOnInteraction: false,
           }}
           modules={[FreeMode, Pagination, Autoplay]}
-          className="w-full "
+          className="w-[165vh]"
         >
           {reviews.map((review, i) => {
             return (
               <SwiperSlide key={i}>
-                <div className="flex flex-col min-h-[150px] gap-3 bg-richblack-800 p-3 text-[14px] text-richblack-25">
+                <div className="flex min-h-[150px] flex-col gap-3 bg-richblack-800 p-3 text-[14px] text-richblack-25">
                   <div className="flex items-center gap-4">
                     <img
                       src={

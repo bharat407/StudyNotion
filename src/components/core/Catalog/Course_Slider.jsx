@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-pascal-case */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -22,7 +24,7 @@ function Course_Slider({ Courses }) {
           spaceBetween={25}
           loop={true}
           freeMode={true}
-          modules={[FreeMode, Pagination , Autoplay]}
+          modules={[FreeMode, Pagination, Autoplay]}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
